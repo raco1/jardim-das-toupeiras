@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    background: url(./assets/fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.6rem;
+}
+.page{
+    height: 102.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16rem;
+}
+.toupeiras{
+    display: grid;
+    grid-template-areas: 
+    "A B C D"
+    "E F G H"
+    "I J K L";
+    justify-items: center;
+    gap: 5rem;
+    
+}
+.topeira div:nth-child(1){
+    grid-area: A;
+}
+.topeira div:nth-child(2){
+    grid-area: B;
+}
+.topeira div:nth-child(3){
+    grid-area: C;
+}
+.topeira div:nth-child(4){
+    grid-area: D;
+}
+.topeira div:nth-child(5){
+    grid-area: E;
+}
+.topeira div:nth-child(6){
+    grid-area: F;
+}
+.topeira div:nth-child(7){
+    grid-area: G;
+}
+.topeira div:nth-child(8){
+    grid-area: H;
+}
+.topeira div:nth-child(9){
+    grid-area: I;
+}
+.topeira div:nth-child(10){
+    grid-area: J;
+}
+.topeira div:nth-child(11){
+    grid-area: K;
+}
+.topeira div:nth-child(12){
+    grid-area: L;
+}
+.toupeira{
+    background-image: url(./assets/toupeira6.svg);
+    width: 22.3rem;
+    height: 16.9rem;
+    cursor: pointer;
+}
+.toupeira:hover{
+    animation: toupeira 800ms 200ms;
+}
+@keyframes toupeira {
+    0%{
+        background-image: url(./assets/toupeira1.svg);
+    }
+    20%{
+        background-image: url(./assets/toupeira2.svg);
+    }
+    40%{
+        background-image: url(./assets/toupeira3.svg);
+    }
+    60%{
+        background-image: url(./assets/toupeira4.svg);
+    }
+    80%{
+        background-image: url(./assets/toupeira5.svg);
+    }
+    100%{
+        background-image: url(./assets/toupeira6.svg);
+    }
+}
